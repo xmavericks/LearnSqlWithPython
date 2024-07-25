@@ -31,7 +31,7 @@ tables = return_inner_join_results(input_table_one, input_table_two)
 table_data = pd.DataFrame(tables)
 print(table_data)
 
-# Output results
+# Output results : Total number of records is last_id + 1 i.e, 8
 """
    table_one_updated_result  table_two_updated_result
 0                         1                         1

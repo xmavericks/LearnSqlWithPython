@@ -39,7 +39,7 @@ table_data = pd.DataFrame(tables)
 print(table_data)
 
 
-# Output Results
+# Output Results : Total number of records is last_id + 1 i.e, 10
 """
   table_one_updated_result table_two_updated_result
 0                        1                        1
