@@ -7,7 +7,7 @@ from constants import input_table_one, input_table_two
 def return_inner_join_results(table_one, table_two):
     """This method illustrates how INNER JOIN Works internally in SQL
 
-    Inner joins combine records from two tables whenever there are matching
+    Definition: Inner joins combine records from two tables whenever there are matching
     values in a field common to both tables. You can use INNER JOIN with the
     Departments and Employees tables to select all the employees in each department.
     """

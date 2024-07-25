@@ -7,7 +7,7 @@ from constants import input_table_one, input_table_two
 def return_right_join_results(table_one, table_two):
     """This method illustrates how RIGHT JOIN Works internally in SQL
 
-    Definition:Right JOIN allows to join two table, keeping all the data or right table and only matching data of left
+    Definition: Right JOIN allows to join two table, keeping all the data or right table and only matching data of left
     table. Right JOIN is a type of outer join in SQL. It allows us to deal with missing values in database and also
     helps in analyzing relationships between data.
     """

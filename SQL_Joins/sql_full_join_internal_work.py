@@ -1,4 +1,4 @@
-# Code to print number of records using LEFT JOIN in SQL
+# Code to print number of records using FULL JOIN in SQL
 import pandas as pd
 
 from constants import input_table_one, input_table_two
@@ -7,9 +7,9 @@ from constants import input_table_one, input_table_two
 def return_full_join_results(table_one, table_two):
     """This method illustrates how RIGHT JOIN Works internally in SQL
 
-    Definition:Right JOIN allows to join two table, keeping all the data or right table and only matching data of left
-    table. Right JOIN is a type of outer join in SQL. It allows us to deal with missing values in database and also
-    helps in analyzing relationships between data.
+    Definition: FULL JOIN is also referred to as a FULL OUTER JOIN . A FULL JOIN returns unmatched rows from both
+    tables and the overlap between them. When no matching rows exist for a row in the left table, the columns
+    of the right table will have NULLs for those records
     """
     # INNER JOIN
     data_list_table_one = []
