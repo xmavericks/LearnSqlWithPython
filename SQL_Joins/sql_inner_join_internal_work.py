@@ -1,10 +1,7 @@
 # Code to print number of records using INNER JOIN in SQL
 import pandas as pd
 
-from constants import input_table_one, input_table_two
-
-scenario_table_one = [1, 1, 1, 1, 1, 'null', 'null']
-scenario_table_two = [1, 1, 1, 2, 'null']
+from constants import input_table_one, input_table_two, scenario_table_one, scenario_table_two
 
 
 def return_inner_join_results(table_one, table_two):
