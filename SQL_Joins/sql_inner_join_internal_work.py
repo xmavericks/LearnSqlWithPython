@@ -11,6 +11,7 @@ def return_inner_join_results(table_one, table_two):
     values in a field common to both tables. You can use INNER JOIN with the
     Departments and Employees tables to select all the employees in each department.
     """
+    # INNER JOIN
     data_list_table_one = []
     data_list_table_two = []
     for item in table_one:
@@ -23,12 +24,12 @@ def return_inner_join_results(table_one, table_two):
         "table_two_updated_result": data_list_table_two
     }
 
-    table_data = pd.DataFrame(items)
-    print(table_data)
+    return items
 
 
-return_inner_join_results(input_table_one, input_table_two)
-
+tables = return_inner_join_results(input_table_one, input_table_two)
+table_data = pd.DataFrame(tables)
+print(table_data)
 
 # Output results
 """

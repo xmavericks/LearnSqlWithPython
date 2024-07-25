@@ -12,6 +12,7 @@ def return_left_join_results(table_one, table_two):
     left table (table1) and the matching records from the right table (table2).
     If there are no matching records in the right table, NULL values are included for those columns.
     """
+    # INNER JOIN
     data_list_table_one = []
     data_list_table_two = []
     for item in table_one:
@@ -20,6 +21,7 @@ def return_left_join_results(table_one, table_two):
                 data_list_table_one.append(ele)
                 data_list_table_two.append(ele)
 
+    # ADDITIONAL ELEMENTS OF LEFT TABLE NOT PRESENT IN RIGHT TABLE
     for item in table_one:
         if item not in table_two:
             data_list_table_one.append(item)
@@ -30,11 +32,12 @@ def return_left_join_results(table_one, table_two):
         "table_two_updated_result": data_list_table_two
     }
 
-    table_data = pd.DataFrame(items)
-    print(table_data)
+    return items
 
 
-return_left_join_results(input_table_one, input_table_two)
+tables = return_left_join_results(input_table_one, input_table_two)
+table_data = pd.DataFrame(tables)
+print(table_data)
 
 
 # Output Results

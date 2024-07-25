@@ -11,6 +11,7 @@ def return_right_join_results(table_one, table_two):
     table. Right JOIN is a type of outer join in SQL. It allows us to deal with missing values in database and also
     helps in analyzing relationships between data.
     """
+    # INNER JOIN
     data_list_table_one = []
     data_list_table_two = []
     for item in table_one:
@@ -19,6 +20,7 @@ def return_right_join_results(table_one, table_two):
                 data_list_table_one.append(ele)
                 data_list_table_two.append(ele)
 
+    # ADDITIONAL ELEMENTS OF RIGHT TABLE NOT PRESENT IN LEFT TABLE
     for item in table_two:
         if item not in table_one:
             data_list_table_two.append(item)
@@ -29,11 +31,12 @@ def return_right_join_results(table_one, table_two):
         "table_two_updated_result": data_list_table_two
     }
 
-    table_data = pd.DataFrame(items)
-    print(table_data)
+    return items
 
 
-return_right_join_results(input_table_one, input_table_two)
+tables = return_right_join_results(input_table_one, input_table_two)
+table_data = pd.DataFrame(tables)
+print(table_data)
 
 
 # Output Results
