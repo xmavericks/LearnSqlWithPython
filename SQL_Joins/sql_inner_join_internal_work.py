@@ -28,3 +28,17 @@ def return_inner_join_results(table_one, table_two):
 
 
 return_inner_join_results(input_table_one, input_table_two)
+
+
+# Output results
+"""
+   table_one_updated_result  table_two_updated_result
+0                         1                         1
+1                         1                         1
+2                         1                         1
+3                         1                         1
+4                         1                         1
+5                         1                         1
+6                         2                         2
+7                         2                         2
+"""
