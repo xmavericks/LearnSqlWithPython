@@ -17,7 +17,7 @@ def return_inner_join_results(table_one, table_two):
     data_list_table_two = []
     for item in table_one:
         for ele in table_two:
-            if item == ele:
+            if item == ele and ele != 'null':
                 data_list_table_one.append(ele)
                 data_list_table_two.append(ele)
     items = {

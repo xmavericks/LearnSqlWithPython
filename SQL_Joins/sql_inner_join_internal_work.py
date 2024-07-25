@@ -16,7 +16,7 @@ def return_inner_join_results(table_one, table_two):
     data_list_table_two = []
     for item in table_one:
         for ele in table_two:
-            if item == ele:
+            if item == ele and ele != 'null':
                 data_list_table_one.append(ele)
                 data_list_table_two.append(ele)
     items = {
@@ -41,7 +41,7 @@ scenario_tables = return_inner_join_results(scenario_table_one, scenario_table_t
 scenario_table_data = pd.DataFrame(scenario_tables)
 print(scenario_table_data)
 
-# Output results : Total number of records is last_id + 1 i.e, 8
+# Output results
 """
 -------------------------------- Scenario : 1 ----------------------------------------
 When Tables are: 
@@ -65,22 +65,20 @@ When Tables are:
 Table One: [1, 1, 1, 1, 1, 'null', 'null']
 Table Two: [1, 1, 1, 2, 'null']
 
-   table_one_updated_result table_two_updated_result
-0                         1                        1
-1                         1                        1
-2                         1                        1
-3                         1                        1
-4                         1                        1
-5                         1                        1
-6                         1                        1
-7                         1                        1
-8                         1                        1
-9                         1                        1
-10                        1                        1
-11                        1                        1
-12                        1                        1
-13                        1                        1
-14                        1                        1
-15                     null                     null
-16                     null                     null
+    table_one_updated_result  table_two_updated_result
+0                          1                         1
+1                          1                         1
+2                          1                         1
+3                          1                         1
+4                          1                         1
+5                          1                         1
+6                          1                         1
+7                          1                         1
+8                          1                         1
+9                          1                         1
+10                         1                         1
+11                         1                         1
+12                         1                         1
+13                         1                         1
+14                         1                         1
 """
