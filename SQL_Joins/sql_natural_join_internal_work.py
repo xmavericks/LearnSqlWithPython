@@ -65,7 +65,7 @@ def return_natural_join_results(table_one, table_two):
 
 
 # With table columns different
-return_natural_join_results(table_one=natural_join_table_one_diff_column, table_two=natural_join_table_two_same_column)
+return_natural_join_results(table_one=natural_join_table_one_diff_column, table_two=natural_join_table_two_diff_column)
 
 # With same table columns
 return_natural_join_results(table_one=natural_join_table_one_same_column, table_two=natural_join_table_two_same_column)
@@ -117,9 +117,6 @@ DIFFERENT COLUMN NAME RESULT : Similar result as Cross-Join
 39                         3                        2
 40                         3                        4
 41                         3                     null
-
-
-SAME COLUMNS NAME RESULT : Similar result as Inner-Join
    table_one_updated_result  table_two_updated_result
 0                         1                         1
 1                         1                         1
